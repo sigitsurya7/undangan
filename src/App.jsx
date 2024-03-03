@@ -139,7 +139,7 @@ function App() {
                 // ref={linkRef}
                 defaultValue="182201011836500" 
                 className='input bg-primary'
-                readOnly 
+                hidden 
               />
               <button className='btn btn-block btn-accent flex' onClick={() => copyLink('182201011836500')}><FaCopy /> Salin No. Rekening</button>
             </div>
@@ -154,7 +154,7 @@ function App() {
                 // ref={linkRef}
                 defaultValue="1560021057908" 
                 className='input bg-primary'
-                readOnly 
+                hidden 
               />
               <button className='btn btn-block btn-accent flex' onClick={() => copyLink('1560021057908')}><FaCopy /> Salin No. Rekening</button>
             </div>
