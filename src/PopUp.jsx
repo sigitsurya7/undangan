@@ -12,7 +12,8 @@ const PopUp = ({ close, onClose }) => {
         onClose()
     }
     const queryParameters = new URLSearchParams(window.location.search)
-    const type = queryParameters.get("to")
+    const to1 = queryParameters.get("to1")
+    const to2 = queryParameters.get("to2")
 
     return(
         <AnimatePresence>
@@ -27,7 +28,7 @@ const PopUp = ({ close, onClose }) => {
                         <div className='text-center pt-4'>
                             <p className='font-semibold italic text-3xl text-center pacifico'>Undangan Pernikahan</p>
                             <span className='font-semibold text-2xl'>Untuk</span>
-                            <p className='text-2xl capitalize italic pacifico'>{type}</p>
+                            <p className='text-2xl capitalize italic pacifico'>{to1} & { to2 ?? 'pasangan' }</p>
                         </div>
 
                         <motion.div className='h-[75%] bg-auto bg-no-repeat bg-top rounded-t-full mt-8' style={{ backgroundImage: `url(${img1})` }} />
