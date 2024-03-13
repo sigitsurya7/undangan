@@ -67,7 +67,7 @@ function App() {
               <h1 className='text-center text-2xl font-serif font-semibold poppins'>Assalamualaikum warahmatullahi wabarakaatuh</h1>
 
               <article className='capitalize text-center font-semibold poppins'>
-                Dengan Memohon Rahmat Dan Ridho Allah Subhanaahu Wa Ta'aala Tang Yelah Menciptakan Makhluk-Nya secara Berpasang-pasangan, InsyaAllah Kami Bermaksud Menyelenggarakan Pernikahan Kami.
+                Dengan Memohon Rahmat Dan Ridho Allah Subhanaahu Wa Ta'aala Yang Telah Menciptakan Makhluk-Nya secara Berpasang-pasangan, InsyaAllah Kami Bermaksud Menyelenggarakan Pernikahan Kami.
               </article>
 
               <div className='flex justify-evenly items-center gap-8 pt-28 pb-10'>
@@ -79,8 +79,6 @@ function App() {
 
                 <div className="w-24 rounded-full">
                   <img className='bg-cover' src={ring} />
-
-                  <span className='font-semibold text-sm'>- 12 Mei 2024 -</span>
                 </div>
 
                 <div className='w-24 text-center'>
@@ -116,15 +114,9 @@ function App() {
                     <span className='font-semibold text-xl'>- Akad Nikah -</span>
 
                     <div className='flex w-full justify-center items-center gap-4 my-4'>
-
-                      <span className='font-semibold text-xl text-center border-black'>Minggu</span>
-
-                      <span className='border-r-2 border-l-2 border-black p-4'>
-                        <span className='font-semibold text-2xl'>12</span> <br />
-                        <span className='font-semibold'>2024</span>
-                      </span>
-
-                      <span className='font-semibold text-xl text-center border-black'>Mei</span>
+                      <p className='poppins font-semibold text-black rounded-md'>
+                        <span className='pacifico font-semibold text-2xl'>Minggu, 12 Mei 2024</span> 
+                      </p> 
                     </div>
 
                     <p className='font-semibold'>Pukul 10:00 WIB - SELESAI</p>
