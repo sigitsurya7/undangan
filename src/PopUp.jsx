@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import img1 from './assets/welkamen.avif'
+import { useSearchParams } from 'react-router-dom'
 
 const PopUp = ({ close, onClose }) => {
 
@@ -10,6 +11,8 @@ const PopUp = ({ close, onClose }) => {
         setOpen(false)
         onClose()
     }
+    const queryParameters = new URLSearchParams(window.location.search)
+    const type = queryParameters.get("to")
 
     return(
         <AnimatePresence>
@@ -21,8 +24,10 @@ const PopUp = ({ close, onClose }) => {
                     exit={{ y:-300, opacity: 0, transition: 60 }}
                 >
                     <div className="z-50 w-screen h-screen bg-secondary p-4 flex flex-col gap-4 justify-center">
-                        <div className='text-center pt-10'>
-                            <span className='font-semibold italic text-3xl text-center pacifico'>Undangan Pernikahan</span>
+                        <div className='text-center pt-4'>
+                            <p className='font-semibold italic text-3xl text-center pacifico'>Undangan Pernikahan</p>
+                            <span className='font-semibold text-2xl'>Untuk</span>
+                            <p className='text-2xl capitalize italic pacifico'>{type}</p>
                         </div>
 
                         <motion.div className='h-[75%] bg-auto bg-no-repeat bg-top rounded-t-full mt-8' style={{ backgroundImage: `url(${img1})` }} />
