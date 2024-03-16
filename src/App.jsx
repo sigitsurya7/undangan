@@ -102,7 +102,7 @@ function App() {
                 <span className='text-center font-sans font-semibold capitalize'>Putra pertama dari bapak dulatif dan ibu irahayu ningsih.</span>
               </div>
 
-              <div id='story'  className='w-screen bg-primary p-4 flex flex-col gap-4 pt-10 border-b-2 border-black pb-8 hidden'>
+              <div id='story'  className='w-screen bg-primary p-4  flex-col gap-4 pt-10 border-b-2 border-black pb-8 hidden'>
                 <span className='pacifico text-3xl text-center mb-4'>Story</span>
                 <ul className="timeline timeline-vertical">
                   <li>
@@ -192,7 +192,7 @@ function App() {
                 </span>
               </div>
 
-              <div id='gift' className='w-screen h-screen p-4 bg-primary text-center flex flex-col gap-4 pt-10'>
+              <div id='gift' className='w-screen h-full p-4 bg-primary text-center flex flex-col gap-4 pt-10'>
                 <p className='poppins'>Kirimkan hadiah kepada mempelai</p>
                 <div className='w-full bg-base-100 rounded-xl shadow-md p-2'>
                     <div className='w-full bg-gradient-to-r from-[#D4E7C5] to-[#BFD8AF] rounded-md flex flex-col items-center gap-4 p-8'>

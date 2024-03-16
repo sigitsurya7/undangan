@@ -31,7 +31,7 @@ const PopUp = ({ close, onClose }) => {
                             <p className='text-2xl capitalize italic pacifico'>{to1} & { to2 ?? 'pasangan' }</p>
                         </div>
 
-                        <motion.div className='h-[75%] bg-auto bg-no-repeat bg-top rounded-t-full mt-8' style={{ backgroundImage: `url(${img1})` }} />
+                        <motion.div className='h-[65vh] bg-auto bg-no-repeat bg-top rounded-t-full mt-8' style={{ backgroundImage: `url(${img1})` }} />
 
                         <button className='btn btn-accent' onClick={closeModal}>Lihat Undangan</button>
                     </div>
