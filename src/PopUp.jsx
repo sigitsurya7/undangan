@@ -15,6 +15,16 @@ const PopUp = ({ close, onClose }) => {
     const to1 = queryParameters.get("to1")
     const to2 = queryParameters.get("to2")
 
+    if(to2){
+        if(to2 !== ''){
+            to2 = '& ' + to2
+        }else{
+            to2 = ''
+        }
+    }else{
+        to2 = '& Pasangan'
+    }
+
     return(
         <AnimatePresence>
 
@@ -28,7 +38,7 @@ const PopUp = ({ close, onClose }) => {
                         <div className='text-center pt-4'>
                             <p className='font-semibold italic text-3xl text-center pacifico'>Undangan Pernikahan</p>
                             <span className='font-semibold text-2xl'>Untuk</span>
-                            <p className='text-2xl capitalize italic pacifico'>{to1} { to2 ? '&' + to2 : '& pasangan' }</p>
+                            <p className='text-2xl capitalize italic pacifico'>{to1} {to2}</p>
                         </div>
 
                         <motion.div className='h-[65vh] bg-auto bg-no-repeat bg-top rounded-t-full mt-8' style={{ backgroundImage: `url(${img1})` }} />
