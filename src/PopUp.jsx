@@ -13,7 +13,7 @@ const PopUp = ({ close, onClose }) => {
     }
     const queryParameters = new URLSearchParams(window.location.search)
     const to1 = queryParameters.get("to1")
-    const to2 = queryParameters.get("to2")
+    let to2 = queryParameters.get("to2")
 
     if(to2){
         if(to2 !== ''){
