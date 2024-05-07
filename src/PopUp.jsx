@@ -16,7 +16,7 @@ const PopUp = ({ close, onClose }) => {
     let to2 = queryParameters.get("to2")
 
     if(to2){
-        if(to2 !== ''){
+        if(to2 !== '&'){
             to2 = '& ' + to2
         }else{
             to2 = ''
